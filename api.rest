@@ -1,0 +1,23 @@
+@url = http://localhost:7070
+
+###
+
+GET {{url}}/private/me
+Content-Type: application/json
+Authorization: Bearer 0856c858-2692-43ff-ba8c-12206a868156
+
+###
+
+GET {{url}}/private/news
+Content-Type: application/json
+Authorization: Bearer f9efaa06-5567-4f70-bb99-5abe923fa21d
+
+
+###
+
+POST {{url}}/auth
+Content-Type: application/json
+
+{ "login": "vasya", "password": "password" }
+
+###
